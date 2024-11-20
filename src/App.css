@@ -1,0 +1,192 @@
+/* Global Styles */
+html, body {
+  height: 100%; /* Ensure full height of the viewport */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Align child elements vertically */
+  justify-content: center; /* Center child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Limit width of the app */
+  padding: 20px;
+  margin-top: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* CAPTCHA Solver Styling */
+.captcha-solver {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  max-width: 100%; /* Ensure full width but no overflow */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally inside captcha-solver */
+}
+
+.captcha-solver h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.captcha-solver p {
+  font-size: 18px;
+}
+
+/* CAPTCHA Input Styling */
+.captcha-input {
+  width: 100%; /* Full width for the input */
+  max-width: 350px; /* Max width to prevent it from becoming too wide */
+  padding: 12px; /* Padding inside the input */
+  margin-bottom: 15px; /* Space below the input */
+  margin-top: 15px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+/* Styling for the CAPTCHA display box */
+.captcha-display {
+  border: 2px solid #000;
+  padding: 20px;
+  font-size: 48px; /* Increase font size */
+  font-weight: bolder; /* Make text extra bold */
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  letter-spacing: 2px; /* Increase space between characters for clarity */
+}
+
+.captcha-input:focus {
+  border-color: #4CAF50; /* Green border when focused */
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2); /* Green shadow when focused */
+}
+
+/* Button Styling */
+.submit-button, .skip-button {
+  width: 100%; /* Full width for the button */
+  max-width: 350px; /* Max width for consistency with the input */
+  padding: 14px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size for the text */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 10px; /* Space below the button */
+}
+
+.submit-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.skip-button {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+}
+
+.skip-button:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 16px;
+}
+
+/* Coin and Streak Display */
+.coins-streak-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Coin Balance Styling */
+.coin-balance {
+  display: flex;
+  align-items: center;
+}
+
+.coin-balance span {
+  margin-right: 8px;
+}
+
+/* Streak Styling */
+.streak {
+  display: flex;
+  align-items: center;
+}
+
+.streak span {
+  margin-right: 8px;
+}
+
+/* Fire Emoji Styling */
+.fire-emoji {
+  color: red;
+}
+
+/* Important Notes Styling */
+.important-notes {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.important-notes li {
+  margin-bottom: 10px;
+}
+
+/* Bullet Points for Important Notes */
+.captcha-solver ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.captcha-solver li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.captcha-solver li:last-child {
+  border-bottom: none;
+}
+
+.captcha-solver li:before {
+  content: "\2022"; /* Bullet point */
+  margin-right: 10px;
+  color: #666;
+}
+
+.important-notes {
+  list-style-type: disc; /* Ensure single bullet points */
+  padding-left: 20px; /* Indent for bullet alignment */
+  margin: 0; /* Avoid any extra margins */
+}
+
+.important-notes li {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 8px; /* Optional spacing between points */
+  list-style-position: outside; /* Ensure bullets outside the text */
+}
